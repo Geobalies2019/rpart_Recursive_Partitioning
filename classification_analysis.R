@@ -54,7 +54,7 @@ predictor_columns <- setdiff(names(data), "label")
 # Create the formula for the decision tree dynamically
 formula <- as.formula(paste("label ~", paste(predictor_columns, collapse = " + ")))
 
-# Create the decision tree model
+# Create a simple decision tree model without tunning parameters
 tree_model <- rpart(formula, data = data,method="class")
 
 # regular plots do not look good so lets use rpart.plot()
