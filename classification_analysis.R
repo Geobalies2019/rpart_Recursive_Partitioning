@@ -121,10 +121,9 @@ for (cp_value in cp_values) {
   
   # Make predictions on the test set
   predictions <- predict(tree, newdata = data_test, type = "class")
-  
   # Calculate accuracy
   accuracy <- sum(predictions == data_test$label) / nrow(data_test)
-  
+
   # Check if this CP value gives a higher accuracy
   if (accuracy > best_accuracy) {
     best_accuracy <- accuracy
