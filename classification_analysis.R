@@ -12,17 +12,12 @@ library(pdp,quietly = TRUE)         # for feature effects
 
 
 # set working directory
-setwd("C:/Users/aea69/Downloads/ML_Materials/irisedb/featuterimp/")
+setwd("C:/Users/xxxxx/")
 
 # Load your CSV data
-#data <- read.csv("amityLSwithlabel.csv")
-#data <- read.csv("oakforestLSwithlabel.csv")
-#data <- read.csv("glassportquad.csv")
-#------------------------------------------------------------------
-data <- read.csv("amitycombdata.csv")
-#data <- read.csv("amityfishnet.csv")
+#data <- read.csv("dataname.csv")
 
-# deleting useless variable runoffclass
+# deleting useless variable 
 data$runoffclass <- NULL
 data$comment <- NULL
 data$SN <- NULL
